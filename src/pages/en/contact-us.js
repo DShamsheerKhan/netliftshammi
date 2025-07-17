@@ -25,7 +25,7 @@ const ContactUs = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `https://reports.itqancapital.com/api/pages/?filters[custom_slug][$eq]=contact-us&populate[sections][populate][section_content][populate][subtitle][populate]=*&locale=${locale}&populate=image&populate=*&populate[sections][populate][section_content][populate][image][populate]=*`,
+          `https://app.netlify.com/projects/dainty-brigadeiros-5e00ce/deploys/api/pages/?filters[custom_slug][$eq]=contact-us&populate[sections][populate][section_content][populate][subtitle][populate]=*&locale=${locale}&populate=image&populate=*&populate[sections][populate][section_content][populate][image][populate]=*`,
           {
             headers: {
               Authorization:
@@ -88,7 +88,7 @@ const ContactUs = () => {
 
     axios
       .post(
-        "https://reports.itqancapital.com/api/contact-uses?populate=*",
+        "https://app.netlify.com/projects/dainty-brigadeiros-5e00ce/deploys/api/contact-uses?populate=*",
         payload,
         {
           headers: {

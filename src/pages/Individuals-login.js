@@ -399,14 +399,14 @@ const IndividualsLogin = () => {
     })
 
     try {
-      console.log("🚀 Starting API request to:", "https://reports.itqancapital.com/api/individuals-logins?populate=*")
+      console.log("🚀 Starting API request to:", "https://app.netlify.com/projects/dainty-brigadeiros-5e00ce/deploys/api/individuals-logins?populate=*")
       console.log("📋 Request headers:", {
         "Content-Type": "multipart/form-data",
         Authorization: "Bearer [TOKEN_HIDDEN]"
       })
       
       const response = await axios.post(
-        "https://reports.itqancapital.com/api/individuals-logins?populate=*",
+        "https://app.netlify.com/projects/dainty-brigadeiros-5e00ce/deploys/api/individuals-logins?populate=*",
         formData, // Send FormData
         {
           headers: {

@@ -23,7 +23,7 @@ const AboutUS = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `https://reports.itqancapital.com/api/pages/?filters[custom_slug][$eq]=about_us&populate[sections][populate][section_content][populate][single_card][populate]=*&locale=${locale}&populate=image&populate[sections][populate][section_content][populate][image][populate]=*`,
+          `https://app.netlify.com/projects/dainty-brigadeiros-5e00ce/deploys/api/pages/?filters[custom_slug][$eq]=about_us&populate[sections][populate][section_content][populate][single_card][populate]=*&locale=${locale}&populate=image&populate[sections][populate][section_content][populate][image][populate]=*`,
           {
             headers: {
               Authorization:

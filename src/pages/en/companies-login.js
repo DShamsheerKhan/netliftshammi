@@ -248,7 +248,7 @@ const CompaniesLogin = () => {
 
     try {
       const response = await axios.post(
-        "https://reports.itqancapital.com/api/general-informations",
+        "https://app.netlify.com/projects/dainty-brigadeiros-5e00ce/deploys/api/general-informations",
         { data: formattedData },
         {
           headers: {
@@ -279,7 +279,7 @@ const CompaniesLogin = () => {
 
     try {
       const response = await axios.post(
-        "https://reports.itqancapital.com/api/authorized-people",
+        "https://app.netlify.com/projects/dainty-brigadeiros-5e00ce/deploys/api/authorized-people",
         { data: formattedData },
         {
           headers: {
@@ -393,9 +393,9 @@ const CompaniesLogin = () => {
       console.log("📋 Final submission data:", JSON.stringify(convertedObject))
 
       // Perform the API submission for companies_login
-      console.log("🚀 Starting final API request to:", "https://reports.itqancapital.com/api/companies-logins?populate=*")
+      console.log("🚀 Starting final API request to:", "https://app.netlify.com/projects/dainty-brigadeiros-5e00ce/deploys/api/companies-logins?populate=*")
       const response = await axios.post(
-        "https://reports.itqancapital.com/api/companies-logins?populate=*",
+        "https://app.netlify.com/projects/dainty-brigadeiros-5e00ce/deploys/api/companies-logins?populate=*",
         formData,
         {
           headers: {

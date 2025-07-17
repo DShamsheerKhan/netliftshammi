@@ -18,7 +18,7 @@ const Board = ({ pageContext, location }) => {
       setLoading(true);
       try {
         const response = await fetch(
-          `https://reports.itqancapital.com/api/pages/?filters[custom_slug][$eq]=board&locale=${locale}&populate[sections][populate][section_content][populate][Board_of_Directors_card][populate]=*&populate=image`,
+          `https://app.netlify.com/projects/dainty-brigadeiros-5e00ce/deploys/api/pages/?filters[custom_slug][$eq]=board&locale=${locale}&populate[sections][populate][section_content][populate][Board_of_Directors_card][populate]=*&populate=image`,
           {
             headers: {
               'Content-Type': 'application/json',

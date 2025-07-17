@@ -17,7 +17,7 @@ const GalleryPage = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          `https://reports.itqancapital.com/api/pages/?filters[custom_slug][$eq]=gallery&locale=${locale}&populate[sections][populate][section_content][populate]=*&populate=*`,
+          `https://app.netlify.com/projects/dainty-brigadeiros-5e00ce/deploys/api/pages/?filters[custom_slug][$eq]=gallery&locale=${locale}&populate[sections][populate][section_content][populate]=*&populate=*`,
           {
             headers: {
               Authorization:
