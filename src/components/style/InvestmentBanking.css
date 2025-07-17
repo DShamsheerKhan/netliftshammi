@@ -1,0 +1,112 @@
+.investment-banking-sec{
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+    padding: 90px 0;
+    background: url("/Frame 106.png");
+    background-repeat: no-repeat;
+    background-position: bottom left
+}
+.investment-banking-title{
+    max-width: 925px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.investment-banking-title h2{
+    font-family: "Bahij TheSansArabic";
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 69px;
+    color: #222222;
+
+}
+
+.investment-banking-container-card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 40px;   
+    width: 90%;
+}
+.react-tabs__tab-list{
+    border-bottom: none !important;
+    list-style-type: none !important;
+}
+.react-tabs__tab--selected::after{
+display:none !important;
+}
+.react-tabs__tab::before{
+    content: " " !important;
+}
+.infopanel-content .react-tabs__tab--selected{
+    background: none !important;
+    border-bottom: 3px solid #3F1A58 !important;
+    background: none !important; 
+}
+
+.react-tabs__tab{
+    border: none !important;
+}
+.react-tabs {
+    background: white;
+    padding: 40px 26px;
+    margin-top: 50px;
+}
+.bg-infopanel-sec{
+    background: #F2F4F7;
+    margin-top: 50px;
+}
+.react-tabs__tab-panel h2{
+    font-family: "Bahij TheSansArabic";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 23.8px;
+    text-align: right;
+    color: rgba(34, 34, 34, 1);
+} 
+ .react-tabs__tab{
+    font-family: "Bahij TheSansArabic";
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 34px;
+    text-align: right;
+    color: rgba(34, 34, 34, 1);
+} 
+.react-tabs__tab{
+    font-family: "Bahij TheSansArabic";
+font-size: 20px !important;
+font-weight: 500 !important;
+line-height: 34px !important;
+text-align: right!important;
+color: rgba(34, 34, 34, 1) !important;
+}
+.tab-image{
+    background: url("/Frame 11111.png");
+    width: 39%;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;   
+}
+@media screen and (max-width:  1024px){
+    .investment-banking-container-card{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .tab-image{
+        height: 400px !important;
+        width: 100% !important;
+    }
+    /* .investment-banking-info-card .react-tabs__tab-list {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+      }
+    .investment-banking-info-card .react-tabs__tab-list > li {
+        font-size: 12px !important;
+        width: fit-content;
+      } */
+    .investment-banking-info-card .react-tabs__tab-list > li.react-tabs__tab--selected {
+        font-weight: 700 !important;
+      }
+}

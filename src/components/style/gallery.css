@@ -1,0 +1,106 @@
+.gallery-sec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     padding: 80px 0;
+     background: url("/Frame 106.png");
+     background-repeat: no-repeat;
+     background-position: bottom left
+}
+.gallery-container{
+    width: 90%;
+}
+.image-container-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .image-container-gallery img,  .image-container-gallery video  {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    flex-grow: 1;
+    flex-basis: 300px;
+    aspect-ratio: 3/2;
+    cursor: pointer;
+  }
+  
+  .image-container-gallery img:hover {
+    transform: scale(1.05);
+  }
+  .image-single-gallery{
+    width: 100%;
+  }
+  .image-single-gallery{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  html[lang="en"] .image-single-gallery{
+    flex-direction: row;
+
+  }
+  .image-container-gallery img, .image-container-gallery video{
+    width: 30% !important;
+    max-width: 500px;
+  }
+  .content-single-gallery{
+    width: 70%;
+  }
+  .content-single-gallery > *{
+    text-decoration: none;
+    color: #5D5D5D;
+    font-weight: 400;
+    font-family: "Bahij TheSansArabic";
+    font-size: 16px;
+  }
+  .gray-divider {
+    height: 1px;
+    background: linear-gradient(to right, rgba(128, 128, 128, 0) 0%, rgba(128, 128, 128, 1) 50%, rgba(128, 128, 128, 0) 100%);
+    margin: 20px 0;
+    width: 100%;
+    border-radius: 8px;
+}
+  .gray-divider:last-child{
+    display: none;
+  }
+  .publishedAt-gallery{
+    display: flex;
+    align-items: center;
+
+  }
+  .publishedAt-gallery h6{
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 3px;
+    color: black;
+  }
+  html[lang="en"] .publishedAt-gallery h6{
+    margin-right: 3px;
+
+
+  }
+
+  @media (max-width: 1024px) {
+    .image-single-gallery{
+      flex-direction: column;
+      gap: 30px;
+    }
+    .image-container-gallery{
+      gap: 50px;
+    }
+    .image-container-gallery img, .image-container-gallery video,.content-single-gallery{
+      width: 100% !important;
+    }
+    html[lang="en"] .image-single-gallery{
+      flex-direction: column;
+    }
+  }

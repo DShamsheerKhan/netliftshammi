@@ -1,0 +1,96 @@
+.Team-sec{
+    display: flex;
+    justify-content: center;
+    background: url("/Frame 21212.png");
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+.Team-container {
+    width: 90%;
+    text-align: right;
+    padding: 105px 0;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.Team-container a{
+    text-decoration: none;
+}
+.Team-container button{
+    padding:6px 25px ;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    background: #3F1A58;
+    opacity: 0.9;
+    border-radius: 5px;
+    font-family: 'Bahij TheSansArabic';
+font-size: 16px;
+font-weight: 500;
+line-height: 25.17px;
+border: none;
+color: #FFFFFF;
+}
+.Team-card{
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    flex-direction: row-reverse;
+    align-items: center;
+    border-radius: 20px;
+    margin-top: 20px;
+
+}
+html[lang="en"] .Team-card{
+    flex-direction: row;
+    text-align: left;
+}
+.Team-card img{
+    border-radius: 0px 20px 20px 0;
+    max-height: 480px;
+}
+.Team-card-info{
+    padding:  0 30px;
+}
+.Team-card-info h4{
+    font-family: 'Bahij TheSansArabic';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 39.25px;
+    color: #000000;
+
+
+}
+
+.Team-card-info p:nth-child(2){
+    font-family: 'Bahij TheSansArabic';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25.17px;
+    color: #46235E;
+    margin-top: 5px;
+}
+.Team-card-info p:nth-child(3){
+    font-family: 'Bahij TheSansArabic';
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 26px;
+    color: #000000;
+    margin-top: 10px;
+    
+
+}
+@media screen and (max-width:  1024px){
+    .Team-card,html[lang="en"] .Team-card{
+        flex-direction: column;
+    }
+    .Team-card-info{
+        padding: 30px;
+    }
+    .Team-card img{
+        width: 100%;
+        border-radius: 20px 20px 0px 0;
+    }
+    
+}

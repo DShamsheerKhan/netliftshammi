@@ -1,0 +1,64 @@
+.PrivateBoxCard-image img{
+    width: 100%;
+}
+.PrivateBoxCard-title{
+    text-align: right;
+}
+.PrivateBoxCard-title h3{
+    font-family: "Bahij TheSansArabic";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 41px;
+    color: #000000;
+    text-align: right;
+    margin-top: 10px;
+}
+html[lang="en"]  .PrivateBoxCard-title h3,html[lang="en"] .PrivateBoxCard-title p,html[lang="en"] .infopanel-container h2 ,html[lang="en"] .infopanel-content ul{
+    text-align: left;
+}
+.PrivateBoxCard-title p{
+    font-family: "Bahij TheSansArabic";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 27.2px;
+    color: #000000;
+    text-align: right;
+    margin-top: 10px;
+}
+.PrivateBoxCard-title button{
+    width: 100%;
+    padding: 10px 0;
+    background: #46235E;
+    border: none;
+    border-radius: 8px;
+    text-align: center !important;
+    color: White;
+    font-family: "Bahij TheSansArabic";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 27px;
+    
+    margin-top: 10px;
+
+}
+.Card-image{
+    width: 100%;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    border-radius: 16px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+.Card-image h3{
+    font-family: 'Bahij TheSansArabic';
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 49.06px;
+    text-align: center;
+    color: White;
+    margin-bottom: 10%;
+}

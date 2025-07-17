@@ -1,0 +1,642 @@
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0 ;
+    direction: rtl;
+}
+
+button{
+    cursor: pointer;
+}
+body{
+    background: #FAFAFA;
+    overflow-x: hidden;
+}
+@keyframes zoomIn {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.1);
+    }
+  }
+  .Reports-button {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: row-reverse;
+  }
+  html[lang="en"] .Reports-button{
+    flex-direction: row;
+  }
+  .Reports-button button {
+    color: #3F1A58;
+    font-family: 'Bahij TheSansArabic';
+    font-size: 16px;
+    border: none;
+    background: rgba(174, 174, 174, 0.2);
+    transition: 0.25s all ease;
+    width: 189px;
+    height: 48px;
+    border-radius: 24px;
+}
+.Reports-button .active{
+    background: #3f1a58;
+    color: white;
+}
+  .hero-homepage-sec {
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10vh;
+      height: 90vh; 
+  }
+  .video-background {
+    position: absolute !important;
+    top: 0; /* Align to top */
+    left: 0; /* Align to left */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /* Optional */
+    z-index: 0; /* Set z-index to 0 to ensure it is behind other content */
+}
+
+.video-background video {
+    width: 100%; /* Make the video take full width */
+    height: 100%; /* Make the video take full height */
+    object-fit: cover; /* Cover the entire area without distortion */
+}
+  .hero-homepage-sec {
+    transition: opacity 0.5s ease; /* Smooth transition for opacity change */
+    opacity: 1; /* Ensure initial opacity */
+    background-size: cover; /* Adjust background size as needed */
+  }
+
+  
+  .hero-homepage-sec > * {
+      position: relative; /* Ensure the content is above the pseudo-element */
+      z-index: 1;
+  }
+.hero-homepage-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+html[lang="en"] h1 ,html[lang="en"] h2,html[lang="en"] h3,html[lang="en"] h4,html[lang="en"] h5,html[lang="en"] h6,html[lang="en"] p,html[lang="en"] select,html[lang="en"] input,html[lang="en"] label,html[lang="en"] ul{
+    direction: ltr !important;
+}
+.hero-homepage-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1000px;
+}
+.hero-homepage-content span{
+    color: #FFFFFF;
+    font-weight: 500;
+    font-family: 'Bahij TheSansArabic';
+    
+}
+.hero-homepage-content span img:nth-child(1){
+    margin-right: 7px;
+}
+.hero-homepage-content span img:nth-child(2){
+    margin-left: 7px;
+}
+.hero-homepage-content h1{
+    color: #FFFFFF;
+    font-size: 60px;
+    font-family: 'Bahij TheSansArabic';
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero-homepage-content p{
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: 'Bahij TheSansArabic';
+    text-align: center;
+    line-height: 25px;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}.hero-homepage-content a {
+    text-decoration: none;
+}
+.hero-homepage-content button {
+    background: #3F1A58;
+    width: 298px;
+    height: 59px;
+    color: #FFFFFF;
+    font-family: 'Bahij TheSansArabic';
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    border-radius: 29.5px;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+
+}
+.hero-homepage-content button .z-index{
+    transition: 0.3s ease;
+
+}
+.hero-homepage-content button:hover .z-index{
+    display: block;
+    color: #3F1A58 !important;
+    z-index: 1111;
+    font-family: 'Bahij TheSansArabic';
+
+}.hero-homepage-content button:hover img{
+    display: none;
+}
+.hero-homepage-content button:hover .z-index::before{
+    content: " ";
+    background: url("../../../static/user-add-linehover.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+    
+}
+.hero-homepage-content .button-content {
+    position: relative;
+    z-index: -1; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+}
+
+
+.hero-homepage-content button:hover {
+    color: #3F1A58; 
+    z-index: 11111;
+}
+
+.hero-homepage-content button:hover .button-content {
+    color: #3F1A58 !important;
+    z-index: 1111111;
+}
+
+.hero-homepage-content button::before {
+    content: '';
+    position: absolute;
+    bottom: -200%;
+    left: 0;
+    width: 150%;
+    height: 150%;
+    background-color: white;
+    border-radius: 100%;
+    transform: scale(0.1, 1);
+    transition: transform 0.5s, bottom 0.5s;
+    z-index: 1;
+}
+
+.hero-homepage-content button:hover::before {
+    bottom: -20px;
+    left: -80px;
+    transform: scale(1, 1);
+}
+.products-sec{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding: 150px;
+    background: url("/Frame 2.png"), linear-gradient(180deg, #E6E3DD 0%, rgba(230, 227, 221, 0) 20.34%);
+
+background-position: left top;
+    background-repeat: no-repeat;
+
+}
+.products-container{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width: 90%;
+    
+}
+.products-container h1{
+    color: #222222;
+    font-size: 42px;
+    font-family: 'Bahij TheSansArabic';
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+.products-container p{
+    color: #3F1A58;
+    font-size: 18px;
+    font-family: 'Bahij TheSansArabic';
+    text-align: right  ;
+    font-weight: 500;
+
+}
+html[lang="en"] .products-container p{
+    text-align: left;
+}
+.products-content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: center;
+    width: 100%;
+    gap: 35px;
+    margin-top: 35px;
+}
+html[lang="en"] .products-content{
+    flex-direction: row;
+}
+.products-single a{
+    text-decoration: none;
+}
+.products-single button{
+    width: 415.2px;
+    height: 80px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 13px;
+    align-items: center;
+    justify-content: center;
+    color: #222222;
+    font-size: 20px;
+    font-family: 'Bahij TheSansArabic';
+    text-align: center;
+    font-weight: 500;
+    background: #FFFFFF;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0px 0px 23.200000762939453px 0px #64646F1F;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+html[lang="en"] .products-single button{
+    flex-direction: row;
+}
+.products-single button:hover{
+    box-shadow: 0px 0px 23.200000762939453px 0px #3F1F5861;
+
+}
+.products-single:nth-child(5) button{
+    background: #3F1A58 !important;
+    color: #FFFFFF;
+    box-shadow: 0px 0px 23.200000762939453px 0px #64646F47;
+
+}
+.ShariyahReview-sec{
+
+    /* background: url("/Frame 21212.png");
+    background-repeat: no-repeat;
+    background-position: top right; */
+
+}
+.ShariyahReview-container{
+    background: url("/Frame 106.png");
+    background-repeat: no-repeat;
+    background-position: bottom left
+}
+.ShariyahReview-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.ShariyahReview-content a{
+    text-decoration: none;
+}
+.BoardDirectors-sec{
+    text-align: center;
+    padding: 90px 0;
+}
+.BoardDirectors-sec img{
+    width: 90%;
+}
+.Reports-sec{
+    padding: 90px 0;
+    background: url("/Frame 21212.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.Reports-sec h3{
+    font-family: "Bahij TheSansArabic";
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 68.68px;
+color: #222222;
+
+}
+@keyframes slideUpFadeIn {
+    from {
+      opacity: 0; 
+      transform: translateY(400%); 
+    }
+    to {
+      opacity: 1; 
+      transform: translateY(0); 
+    }
+  }
+  
+  /* .products-single {
+    opacity: 0; 
+    animation: slideUpFadeIn 1s ease-out forwards; 
+  } */
+  .animate {
+    animation: slideUpFadeIn 1s ease-out forwards;
+  }
+  .exchange-rates-section{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(#FAFAFA 80%,#46235E 20%) ;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+  .exchange-rates-container{
+    text-align: center;
+    padding-bottom: 145px;
+ 
+  
+  }
+  .exchange-rates-container h2{
+    color: #222222;
+    font-size: 42px;
+    font-family: 'Bahij TheSansArabic';
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 700;
+    margin-bottom: 35px;
+  }
+  table{
+    border-spacing: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px -4px 21.5px 0px #00000008;
+    border-radius: 10px;
+  }
+  td,th{
+    border: 1px solid #F2F4F7;
+    border-top:none ;
+  }
+  th{
+    text-align: center;
+    color: #222222;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Bahij TheSansArabic';
+    height: 70px;
+  }
+  td{
+    height: 7vw;
+    width: 15vw;
+    text-align: center;
+    color: #5D5D5D;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Bahij TheSansArabic';
+
+  }
+  
+  .box-name{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    width: 400px;
+    color: #3F1A58;
+    font-size: 18px;
+  }
+  .box-name img {
+    margin-right: 25px;
+}
+.exchange-rates-container table tr:nth-child(3) td:nth-child(1){
+    border-radius: 0px 0px 0px 10px;
+}
+.exchange-rates-container table tr:nth-child(3) td:nth-child(5){
+    border-radius: 0px 0px 10px 0px;
+}
+
+
+
+
+.Reports-data-sec{
+    display: flex;
+    justify-content: center;
+    background: url("/Frame 2.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+.Reports-data-container{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   padding: 150px 0;
+
+}
+.Reports-data-title h1{
+    color: #222222;
+    font-size: 42px;
+    font-family: 'Bahij TheSansArabic';
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.Reports-data-title p{
+    text-align: center;
+    color: #3F1A58;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Bahij TheSansArabic';
+
+    margin-bottom: 80px;
+}
+.Reports-data-cards{
+    display: flex;
+    gap: 50px;
+
+}
+.Reports-data-single-card{
+    background: white;
+    box-shadow: 0px 0px 21.299999237060547px 0px #64646F1F;
+    width: 328px;
+    height: 243px;
+    border-radius: 27px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Reports-data-single-card {
+margin-top: 30px;
+
+}
+.Reports-data-single-card p{
+    margin-top: 15px;
+    text-align: center;
+    color: #222222;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Bahij TheSansArabic';
+}
+.sec-footer-background{
+    height: 200px;
+    background: #FFFFFF;
+    margin-top: -100px;
+}
+.space-homepage{
+    padding-top: 150px;
+}
+.ShariyahReview-card{
+margin-top: 30px;
+
+}
+.ShariyahReviews-card a{
+    text-decoration: none;
+}
+.ShariyahReviews-card-container{
+    width: 90%;
+    display: flex;
+    justify-content: end;
+}
+html[lang="en"] .exchange-rate-card table {
+    display: flex;
+    flex-direction: column;
+}
+
+html[lang="en"] .exchange-rate-card table thead, 
+html[lang="en"] .exchange-rate-card table tbody {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+html[lang="en"] .exchange-rate-card table thead tr, 
+html[lang="en"] .exchange-rate-card table tbody tr {
+    display: flex;
+    flex-direction: row-reverse; /* Reverse the rows */
+    justify-content: center;
+    align-items: center;
+}
+
+html[lang="en"] .exchange-rate-card table th, 
+html[lang="en"] .exchange-rate-card table td {
+    flex: 1; /* Ensure all cells have equal width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Optional: Style table headers */
+html[lang="en"] .exchange-rate-card table th {
+    font-weight: bold;
+}
+html[lang="en"] .box-name{
+    flex-direction: row-reverse;
+}
+html[lang="en"] .box-name img{
+    margin-right: 0;
+    /* margin-left: 25px; */
+}
+@media screen and (max-width:  1024px) {
+
+    .exchange-rate-card {
+        overflow-X: auto;
+        justify-content: flex-end;
+        max-width: 100vw;
+    }
+    .exchange-rates-container h2{
+        font-size: 24px;
+    }
+    td,th{
+        padding: 20px;
+    }
+    .products-single button{
+        width: 100%;
+        height: 80px;
+    }
+    .products-sec{
+        padding: 30px 0;
+    }
+    .hero-homepage-content{
+        width: 100%;
+    }
+    
+    .hero-homepage-content h1{
+        font-size: 30px;
+    }
+    .products-content {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+        gap: 35px;
+    }
+    .hero-homepage-content p,.products-container p{
+        font-size: 14px;
+    }
+    .products-container p{
+        margin-bottom: 30px;
+    }
+    .hero-homepage-content h1 img{
+        width: 27px;
+        height: 27px;
+    }
+    html[lang="en"] .hero-homepage-content h1 img{
+        width: 50px;
+        height: 50px;
+    }
+    .products-container h1{
+        font-size: 24px;
+    }
+    main{
+        margin-top: 50px;
+    }
+    .space-homepage{
+        padding-top: 50px;
+    }
+    .BoardDirectors-sec{
+        padding: 50px 0;
+    }
+    html[lang="en"] .exchange-rate-card table{
+        width: 1500px;
+    }
+    html[lang="en"] .products-content{
+        flex-direction: column;
+    }
+    .ShariyahReview-content a,
+    .ShariyahReview-content a > .Reports-data-single-card {
+        width: 100%;
+    }
+    html[lang="ar"] .exchange-rate-card{
+        direction: rtl;
+    }
+    html[lang="ar"] .exchange-rate-card table{
+        direction: ltr;
+    }
+}
+@media screen and (max-width:  767px){
+    .Reports-data-cards{
+        flex-direction: column;
+    }
+    main{
+        margin-top: 50px;
+    }
+    html[lang="en"] .hero-homepage-content h1{
+        flex-direction: column;
+        text-align: center;
+        gap: 0;
+        margin-top: 20px;
+    }
+    .ShariyahReview-content{
+        align-items: center;
+    }
+
+}

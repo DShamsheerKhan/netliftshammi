@@ -1,0 +1,16 @@
+.Reports-data-single-card.security-single-card:hover{
+    background: #3F1A58 !important;
+}
+.Reports-data-single-card.security-single-card:hover p{
+    color: #FFFFFF;
+}
+.security-single-card {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .security-single-card:hover {
+    transform: translateY(-10px); /* Adjust the value to control the movement */
+  }
+  .Reports-data-cards a{
+    text-decoration: none;
+  }

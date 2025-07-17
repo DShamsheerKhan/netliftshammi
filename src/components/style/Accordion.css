@@ -1,0 +1,76 @@
+.acc-Asset{
+    margin-top: 20px;
+    border: 1px solid #F2F4F7;
+    box-shadow: none !important;
+    
+}
+.acc-Asset:nth-child(1){
+    margin-top: 0px;
+}
+#panel1-faq {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+html[lang="en"] #panel1-faq{
+    flex-direction: row;
+}
+html[lang="en"] #panel1-faq div{
+    justify-content: flex-start !important; 
+}
+html[lang="en"] .acc-Asset li{
+    text-align: left;
+}
+html[lang="en"] .acc-Asset li::after{
+    content: ""; 
+
+}
+html[lang="en"] .acc-Asset li::before {
+    content: "\2022"; 
+    color: #877096; 
+    font-size: inherit;
+    margin-right: 0.5em; 
+}
+#panel1-faq div{
+    font-family: "Bahij TheSansArabic";
+font-size: 16px;
+font-weight: 500;
+line-height: 25px;
+letter-spacing: 0em;
+text-align: right !important;
+justify-content: flex-end !important;
+color: #5D5D5D;
+}
+
+.acc-Asset li {
+    text-align: right; 
+    list-style-type: none;
+    margin-bottom: 15px;
+
+}
+.acc-Asset li::after {
+    content: "\2022"; 
+    color: #877096; 
+    font-size: inherit;
+    margin-left: 0.5em; 
+}
+.acc-Asset li a{
+    text-decoration: none;
+    text-align: right;
+    font-family: "Bahij TheSansArabic";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: right;
+    color: #877096;
+}
+#panel1-faq{
+    background-color: #FFFFFF !important;
+}
+#panel1-faq[aria-expanded="true"] {
+    background:#F2F4F7  !important;
+}
+#panel1-faq[aria-expanded="true"] div{
+    color: #46235E;
+    font-weight: 700;
+}

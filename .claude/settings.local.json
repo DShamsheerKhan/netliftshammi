@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rm:*)",
+      "Bash(npm install:*)",
+      "Bash(yarn install)",
+      "Bash(npm cache clean:*)",
+      "Bash(npm rebuild:*)",
+      "Bash(powershell.exe:*)",
+      "Bash(npm config:*)",
+      "Bash(npm run develop:*)",
+      "Bash(npx gatsby develop:*)",
+      "Bash(pnpm install:*)",
+      "Bash(grep:*)"
+    ],
+    "deny": []
+  }
+}

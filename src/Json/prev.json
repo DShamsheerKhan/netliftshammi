@@ -1,0 +1,56 @@
+{
+  "data": [
+    {
+      "id": 78,
+      "attributes": {
+        "section_title": "address_footer",
+        "custom_slug": "address_footer",
+        "createdAt": "2024-12-19T09:39:17.830Z",
+        "updatedAt": "2024-12-19T09:39:32.540Z",
+        "publishedAt": "2024-12-19T09:39:32.190Z",
+        "locale": "en",
+        "section_content": [
+          {
+            "id": 146,
+            "__component": "blocks.subtitle",
+            "subtitle": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Itqan Capital is an investment company based in Saudi Arabia and licensed by the Capital Market Authority.",
+                    "type": "text"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Commercial Registration Number: 4030167335 dated 6/3/2007",
+                    "type": "text"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  { "text": "License Number: 07058-37", "type": "text" }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  { "text": "Unified Number: 8001240533", "type": "text" }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "meta": {
+    "pagination": { "page": 1, "pageSize": 25, "pageCount": 1, "total": 1 }
+  }
+}

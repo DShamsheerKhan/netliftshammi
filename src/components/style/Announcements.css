@@ -1,0 +1,69 @@
+.AnnouncementsBox{
+    border: 1px solid #F2F4F7;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.AnnouncementsBox p{
+    font-family: "Bahij TheSansArabic";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30.6px;
+    text-align: right;
+
+}
+html[lang="en"] .AnnouncementsBox p,html[lang="en"] .Announcements-content h3{
+    text-align: left;
+}
+/* .AnnouncementsBox p:nth-child(1){
+    color: #3F1A58;
+}
+.AnnouncementsBox p:nth-child(2){
+    color: #222222;
+}
+.AnnouncementsBox p:nth-child(3){
+    color: #3F1A58;
+    color: 16px;
+} */
+.Announcements-sec{
+    padding: 100px 0;
+    background: url("/Frame 2.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+.Announcements-container{
+    background: #FFFFFF;
+    border-radius: 12px;
+    width: 90%;
+}
+.Announcements-content{
+    padding: 60px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.Announcements-content h3{
+    font-family: "Bahij TheSansArabic";
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 68.68px;
+    color: #222222;
+    margin-bottom: 10px;
+}
+@media screen and (max-width: 1024px) {
+    .Announcements-content {
+      padding: 20px;
+    }
+    .Announcements-content h3 {
+      font-size: 32px;
+    }
+    .AnnouncementsBox p > p:not(:first-child) {
+      font-size: 14px;
+      line-height: normal;
+      margin-top: 16px;
+    }
+  }

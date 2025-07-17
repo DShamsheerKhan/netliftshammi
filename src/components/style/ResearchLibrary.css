@@ -1,0 +1,60 @@
+.ResearchLibrary-sec{
+    padding: 100px 0;
+    background: url("/Frame 21212.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    display: flex;
+    justify-content: center;
+}
+.ResearchLibrary-container{
+    background: #FFFFFF;
+    border-radius: 12px;
+    width: 90%;
+}
+.ResearchLibrary-title{
+    padding: 70px 0;
+}
+.ResearchLibrary-title h3{
+    font-family: "Bahij TheSansArabic";
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 68.68px;
+    text-align: center;
+    color: #222222;
+}
+.ResearchLibrary-boxes{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+    overflow-x: auto;
+    justify-items: center;
+    padding: 10px;
+    row-gap: 56px;
+}
+.ResearchLibraryBox-sec{
+    text-align: center;
+}
+.ResearchLibraryBox-sec h3{
+    font-family: "Bahij TheSansArabic";
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32.71px;
+    color: #222222;
+    margin-top: 15px;
+}
+.ResearchLibraryBox-sec p{
+    font-family: "Bahij TheSansArabic";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25.17px;
+    text-align: center;
+    color: #5D5D5D;
+    margin-top: 10px;
+}
+@media screen and (max-width:  1024px){   
+    .ResearchLibrary-boxes{
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+}

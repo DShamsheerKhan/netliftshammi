@@ -1,0 +1,19 @@
+.loader-sec{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #3F1A58;
+}
+.loader-container {
+    background: url("/loader Background.png");
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    justify-content: center;
+    align-content: center;
+    gap: 50px;
+    width: 90%;
+
+}
