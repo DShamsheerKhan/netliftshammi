@@ -34,7 +34,7 @@ const Layout = ({ children, overPadding }) => {
       try {
         // Fetch newsletter data
         const newsletterResponse = await fetch(
-          `https://dainty-brigadeiros-5e00ce.netlify.app/api/sections?filters[custom_slug][$eq]=Newsletter&locale=${locale}&populate[section_content][populate][title]=*&populate[section_content][populate][subtitle]=*`,
+          `https://strong-nest-c09ad17fab.strapiapp.com/api/sections?filters[custom_slug][$eq]=Newsletter&locale=${locale}&populate[section_content][populate][title]=*&populate[section_content][populate][subtitle]=*`,
           {
             headers: {
               Authorization:
@@ -46,7 +46,7 @@ const Layout = ({ children, overPadding }) => {
 
         // Fetch address data
         const addressResponse = await fetch(
-          `https://dainty-brigadeiros-5e00ce.netlify.app/api/sections?filters[custom_slug][$eq]=address_footer&locale=${locale}&populate[section_content][populate][title]=*&populate[section_content][populate][subtitle]=*`,
+          `https://strong-nest-c09ad17fab.strapiapp.com/api/sections?filters[custom_slug][$eq]=address_footer&locale=${locale}&populate[section_content][populate][title]=*&populate[section_content][populate][subtitle]=*`,
           {
             headers: {
               Authorization:
@@ -83,7 +83,7 @@ const Layout = ({ children, overPadding }) => {
     }
 
     const response = await fetch(
-      "https://dainty-brigadeiros-5e00ce.netlify.app/api/newsletter-emails",
+      "https://strong-nest-c09ad17fab.strapiapp.com/api/newsletter-emails",
       {
         method: "POST",
         headers: {
