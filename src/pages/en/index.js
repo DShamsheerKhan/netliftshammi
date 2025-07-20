@@ -46,7 +46,7 @@ const Index = () => {
   const [pageData, setPageData] = useState(null);
   
   useEffect(() => {
-    fetch(`https://dainty-brigadeiros-5e00ce.netlify.app//api/pages/?filters[custom_slug][$eq]=home_page&populate[sections][populate][section_content][populate][Itqan_capital_products_button][populate]=*&populate=button_title_icon&locale=${locale}`, {
+    fetch(`https://dainty-brigadeiros-5e00ce.netlify.app/api/pages/?filters[custom_slug][$eq]=home_page&populate[sections][populate][section_content][populate][Itqan_capital_products_button][populate]=*&populate=button_title_icon&locale=${locale}`, {
       headers: {
         Authorization: 'Bearer ded7a84db35ddadb21917aee44f2a073f4880baf20dbf06abd375eb7276de560be2999b1ba9a092fa46e45b970d891af83521cbb874bb2d2a09a526e80313d2d947e72c0079252ec76592b13fbd33c1729a2943f857f163033c4f7384072d032520f41c2368cd207187c10b9a28796a75678d8cb38ed50b6f37d7e73251c5b68'
       }
