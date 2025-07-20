@@ -31,7 +31,7 @@ const JoinUs = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `https://app.netlify.com/projects/dainty-brigadeiros-5e00ce/deploys/api/pages/?filters[custom_slug][$eq]=join-us&populate[sections][populate][section_content][populate][subtitle][populate]=*&locale=${locale}&populate=image&populate=*&populate[sections][populate][section_content][populate][image][populate]=*`,
+          `https://dainty-brigadeiros-5e00ce.netlify.app//api/pages/?filters[custom_slug][$eq]=join-us&populate[sections][populate][section_content][populate][subtitle][populate]=*&locale=${locale}&populate=image&populate=*&populate[sections][populate][section_content][populate][image][populate]=*`,
           {
             headers: {
               Authorization:
@@ -130,7 +130,7 @@ const JoinUs = () => {
 
     axios
       .post(
-        "https://app.netlify.com/projects/dainty-brigadeiros-5e00ce/deploys/api/join-uses?populate=*",
+        "https://dainty-brigadeiros-5e00ce.netlify.app//api/join-uses?populate=*",
         payload,
         {
           headers: {
