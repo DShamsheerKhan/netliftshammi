@@ -23,7 +23,7 @@ const AboutUS = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `https://dainty-brigadeiros-5e00ce.netlify.app/api/pages/?filters[custom_slug][$eq]=about_us&populate[sections][populate][section_content][populate][single_card][populate]=*&locale=${locale}&populate=image&populate[sections][populate][section_content][populate][image][populate]=*`,
+          `https://strong-nest-c09ad17fab.strapiapp.com/api/pages/?filters[custom_slug][$eq]=about_us&populate[sections][populate][section_content][populate][single_card][populate]=*&locale=${locale}&populate=image&populate[sections][populate][section_content][populate][image][populate]=*`,
           {
             headers: {
               Authorization:

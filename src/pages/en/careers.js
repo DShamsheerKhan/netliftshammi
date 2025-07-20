@@ -31,7 +31,7 @@ const JoinUs = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `https://dainty-brigadeiros-5e00ce.netlify.app/api/pages/?filters[custom_slug][$eq]=join-us&populate[sections][populate][section_content][populate][subtitle][populate]=*&locale=${locale}&populate=image&populate=*&populate[sections][populate][section_content][populate][image][populate]=*`,
+          `https://strong-nest-c09ad17fab.strapiapp.com/api/pages/?filters[custom_slug][$eq]=join-us&populate[sections][populate][section_content][populate][subtitle][populate]=*&locale=${locale}&populate=image&populate=*&populate[sections][populate][section_content][populate][image][populate]=*`,
           {
             headers: {
               Authorization:
@@ -130,7 +130,7 @@ const JoinUs = () => {
 
     axios
       .post(
-        "https://dainty-brigadeiros-5e00ce.netlify.app/api/join-uses?populate=*",
+        "https://strong-nest-c09ad17fab.strapiapp.com/api/join-uses?populate=*",
         payload,
         {
           headers: {
