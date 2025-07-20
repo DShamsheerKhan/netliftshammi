@@ -13,7 +13,7 @@ const AdvisoryResearch = () => {
   const { locale } = useLocalization();
 
   const fetchPageData = async () => {
-    const baseUrl = 'https://strong-nest-c09ad17fab.strapiapp.com/api/pages/';
+    const baseUrl = 'https://dainty-brigadeiros-5e00ce.netlify.app/api/pages/';
     const queryParams = `?filters[custom_slug][$eq]=advisory-research&locale=${locale}&populate[sections][populate][section_content][populate]=*&populate=image`;
     const token = 'ded7a84db35ddadb21917aee44f2a073f4880baf20dbf06abd375eb7276de560be2999b1ba9a092fa46e45b970d891af83521cbb874bb2d2a09a526e80313d2d947e72c0079252ec76592b13fbd33c1729a2943f857f163033c4f7384072d032520f41c2368cd207187c10b9a28796a75678d8cb38ed50b6f37d7e73251c5b68';
 
