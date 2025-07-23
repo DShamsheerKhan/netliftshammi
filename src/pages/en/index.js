@@ -46,7 +46,7 @@ const Index = () => {
   const [pageData, setPageData] = useState(null);
   
   useEffect(() => {
-    fetch(`https://reports.itqancapital.com/api/pages/?filters[custom_slug][$eq]=home_page&populate[sections][populate][section_content][populate][Itqan_capital_products_button][populate]=*&populate=button_title_icon&locale=${locale}`, {
+    fetch(`https://strong-nest-c09ad17fab.strapiapp.com/api/pages/?filters[custom_slug][$eq]=home_page&populate[sections][populate][section_content][populate][Itqan_capital_products_button][populate]=*&populate=button_title_icon&locale=${locale}`, {
       headers: {
         Authorization: 'Bearer 0f4719065f4e32664cb04309b82a4deaa30b50a0264f656cad02f6b14b32a0ebe1f2b9605877ea25251f33c38f65b1b670a6191ded56603d831cdebb5c953db6a38b2f3beb03af16455955777e26b8a7d1bc84da0b7f76266a921b28b97510409a46a88d2b68ee04e3266b206cc877d951249dde9b7967e6e2e278c67b6ccc38'
       }

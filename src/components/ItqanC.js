@@ -11,7 +11,7 @@ const ItqanC = () => {
   useEffect(() => {
     const fetchData = async () => {
       const token = 'd669ad6366aa64f56773be0483825f4c484c013463b9747662f0dee6fe068c486286209e0ddf7210dadcb668fa2a9315793ae3c9d22f8047a5748eeb148d4e6556287f972c9a5c5c94f9c16fa42678d6ced8c78bc5e5463a329f0c0eebcf4514ede98fc323e5acfc03ed6593f69f648d531b39c3efe6db04c71527d5030db760';
-      const baseUrl = `https://reports.itqancapital.com/api/pages/?filters[custom_slug][$eq]=home_page&populate[sections][populate][section_content][populate][points][populate]=*&locale=${locale}&populate=title_icon`;
+      const baseUrl = `https://strong-nest-c09ad17fab.strapiapp.com/api/pages/?filters[custom_slug][$eq]=home_page&populate[sections][populate][section_content][populate][points][populate]=*&locale=${locale}&populate=title_icon`;
       
       try {
         const response = await fetch(baseUrl, {
