@@ -14,7 +14,7 @@ const Distinction = () => {
       try {
         const response = await axios.get(`https://strong-nest-c09ad17fab.strapiapp.com/api/pages/?filters[custom_slug][$eq]=home_page&populate[sections][populate][section_content][populate][single_card][populate]=*&locale=${locale}&populate=image`, {
           headers: {
-            Authorization: 'Bearer ded7a84db35ddadb21917aee44f2a073f4880baf20dbf06abd375eb7276de560be2999b1ba9a092fa46e45b970d891af83521cbb874bb2d2a09a526e80313d2d947e72c0079252ec76592b13fbd33c1729a2943f857f163033c4f7384072d032520f41c2368cd207187c10b9a28796a75678d8cb38ed50b6f37d7e73251c5b68'
+            Authorization: 'Bearer 0f4719065f4e32664cb04309b82a4deaa30b50a0264f656cad02f6b14b32a0ebe1f2b9605877ea25251f33c38f65b1b670a6191ded56603d831cdebb5c953db6a38b2f3beb03af16455955777e26b8a7d1bc84da0b7f76266a921b28b97510409a46a88d2b68ee04e3266b206cc877d951249dde9b7967e6e2e278c67b6ccc38'
           },
         });
         // Assuming response structure matches the provided API format
