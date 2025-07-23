@@ -1,0 +1,171 @@
+.sec-footer-section{
+    display: flex;
+    justify-content: center;
+    /* background-color: linear-gradient(#FFFFFF 20%,#FAFAFA 80%) ; */
+    background: url("/Frame 106.png");
+    background-position: bottom left;
+    background-repeat: no-repeat;
+}
+.sec-footer-container{
+    justify-content: space-between;
+    display: flex;
+    width: 80%;
+    /* gap: 105px; */
+ 
+    background: url("/Frame97.png") , linear-gradient(270deg, #391A52 2.82%, #3F1F58 10.17%, #593E6D 90.04%, #E6E3DD 236.36%);
+    ;
+    background-size: contain; 
+    background-repeat: no-repeat;          
+      
+  
+     background-position: top right;
+      padding: 50px ;
+      border-radius: 10px;
+ }
+ html[lang="en"]  .sec-footer-container{
+    flex-direction: row-reverse;
+ }
+form.sec-footer-form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+form.sec-footer-form label{
+    align-items: flex-end;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    font-family: "Bahij TheSansArabic";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: left;
+    color: #FFFFFF;
+
+}
+form.sec-footer-form label input,form.sec-footer-form label textarea{
+    width: 96.8%;
+    padding: 10px;
+    text-align: right;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 10px;
+    font-family: "Bahij TheSansArabic";
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    color: rgba(255, 255, 255, 1);
+    text-align: right;
+    direction: rtl;
+}
+form.sec-footer-form label input{
+    width: 96.5%;
+}
+form.sec-footer-form label textarea{
+    height: 165px;
+}
+form.sec-footer-form p{
+    font-family: 'Bahij TheSansArabic light';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: right !important;
+    color: rgba(255, 255, 255, 1);
+
+}
+form.sec-footer-form button{
+    padding: 13px 0;
+    border-radius: 48px;
+    font-family: "Bahij TheSansArabic";
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(63, 26, 88, 1);
+    line-height: 28px;
+    border: none;
+    background: #FFFFFF;
+
+}
+:focus-visible{
+    outline: none !important;
+}
+.sec-footer-content  h2{
+
+        font-family: "Bahij TheSansArabic";
+            font-size: 42px;
+            font-weight: 500;
+        color: #FFFFFF;
+            text-align: right;
+
+}
+html[lang="en"] .sec-footer-content h2,html[lang="en"] .sec-footer-content  p,html[lang="en"] .sec-footer-content h3{
+    text-align: left;
+}  
+html[lang="en"] .sec-footer-content-social {
+   justify-content: flex-start;
+}
+html[lang="en"] form.sec-footer-form label{
+    align-items: flex-start;
+
+}
+html[lang="en"] form.sec-footer-form label input,html[lang="en"] form.sec-footer-form label textarea,html[lang="en"] form.sec-footer-form p{
+    text-align: left !important;
+}
+.sec-footer-content  p{
+    font-family: 'Bahij TheSansArabic light';
+font-size: 16px;
+font-weight: 500;
+line-height: 30px;
+margin-top: 20px;
+text-align: right;
+color: #FFFFFF;
+}
+.sec-footer-content h3{
+    font-family: "Bahij TheSansArabic";
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 43px;
+    text-align: right;
+    color: #FFFFFF;
+    margin-top: 50px;
+   
+}
+.sec-footer-content h6{
+    font-family: "Bahij TheSansArabic";
+font-size: 18px;
+font-weight: 500;
+line-height: 28px;
+text-align: right;
+color: #FFFFFF;
+    margin-top: 36px;
+}
+.sec-footer-content-social {
+    text-align: end;
+    margin-top: 25px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+.sec-footer-content-social img{
+    cursor: pointer;
+}
+.sec-footer-content h6 img{
+    width: 24px;
+    height: 24px;
+}
+.sec-footer-content h6{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+@media screen and (max-width:  1024px) {
+    .sec-footer-container{
+        flex-direction: column;
+    }
+    html[lang="en"]  .sec-footer-container{
+        flex-direction: column-reverse;
+    }
+    .sec-footer-container{
+        gap: 50px;
+    }
+}

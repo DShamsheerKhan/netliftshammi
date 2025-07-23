@@ -1,0 +1,130 @@
+.Conservation-Services-card-sec{
+    display: flex;
+    justify-content: center;
+    padding-top: 90px;
+    background: url("/Frame 2.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+.Conservation-Services-card-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 115px;
+    /* background: url("/Frame 106.png");
+    background-repeat: no-repeat;
+    background-position: bottom left; */
+}
+
+.Conservation-Services-card-title,.AdvisoryResearch-card-title{
+    width: 925px;
+    text-align: center;
+}
+.Conservation-Services-card-title h1,.AdvisoryResearch-card-title h1,.AdvisoryResarch-info h1{
+    font-family: "Bahij TheSansArabic";
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 69px;
+    color: #222222;
+    margin-bottom: 20px;
+}
+.Conservation-Services-card-title p,.AdvisoryResearch-card-title p{
+    font-family: "Bahij TheSansArabic";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 27px;
+    text-align: left;
+    color: #222222;
+    margin-bottom: 20px;
+}
+.Conservation-Services-card-title p{
+    font-size: 20px !important;
+}
+
+html[lang="ar"] .Conservation-Services-card-title p,html[lang="ar"].AdvisoryResearch-card-title p{
+    text-align: right;
+}
+.Conservation-Services-cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 40px;   
+    width: 90%;
+    
+}
+.ConservationServices-single-card{
+    padding: 35px;
+    background: #FFFFFF;
+    border-radius: 24px;
+}
+section.AdvisoryResearch-sec {
+    display: flex;
+    justify-content: center;
+
+    flex-direction: column;
+    align-items: center;
+}
+.Conservation-Services-card-title{
+    margin-bottom: 30px;
+}
+.AdvisoryResearch-sec{
+    /* background: url("/Frame 21212.png");
+    background-position: right top;
+    background-repeat: no-repeat; */
+    padding-top: 90px;
+}
+.AdvisoryResearch-container{
+    display: flex;
+    gap: 50px;
+    width: 90%;
+    align-items: center;
+    margin-top: 50px;
+}
+html[lang="en"] .AdvisoryResearch-container{
+    flex-direction: row-reverse;
+}
+html[lang="en"] .AdvisoryResarch-info p{
+text-align: left;
+}
+.AdvisoryResarch-img{
+    width: 100%;
+}
+.AdvisoryResarch-img img{
+    max-width: 1000px;
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+}
+.AdvisoryResarch-info p{
+    font-family: "Bahij TheSansArabic";
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 27px;
+    text-align: center;
+    color: #222222;
+    margin-bottom: 20px;
+    text-align: right;
+}
+@media screen and (max-width:  1024px){
+    .Conservation-Services-cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .Conservation-Services-card-title{
+        width: 90%;
+    }
+    .AdvisoryResarch-info h1{
+        font-size: 30px;
+    }
+    .AdvisoryResarch-info p{
+        font-size: 18px;
+    }
+    .AdvisoryResearch-container{
+        flex-direction: column;
+    }
+    html[lang="en"] .AdvisoryResearch-container{
+        flex-direction: column-reverse;
+    }
+    .AdvisoryResarch-info h1{
+        line-height: 1.3;
+    }
+}

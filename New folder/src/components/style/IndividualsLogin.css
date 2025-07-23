@@ -1,0 +1,476 @@
+body{
+    position: relative;
+}
+.individuals-login-sec{
+    background: url("/Frame 2.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+.individuals-login-container{
+    background: url("/Frame 106.png");
+    background-repeat: no-repeat;
+    background-position: bottom left
+}
+.individuals-login-title h1{
+    font-family: "Bahij TheSansArabic";
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 68.68px;
+   text-align: center;
+    color: #222222;
+}
+.individuals-single-field label.required-field::after {
+    content: '*';
+    color: red;
+  }
+  html[lang="ar"] label {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 5px;
+}
+html[lang="en"] label {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 5px;
+}
+.individuals-single-field label:has(.error) input {
+    border: 1px solid red;
+}
+label div {
+    color: red  !important;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+label div img{
+    width: 16px;
+    height: 16px;
+}
+.authorizedPersons-button{
+    background: none;
+    border: none;
+    font-size: 40px;
+    color: #3F1A58;
+    margin-left: 10px;
+    display: inline-flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 5px;
+}
+html[lang="en"] .authorizedPersons-button {
+    background: none;
+    border: none;
+    font-size: 40px;
+    color: #3F1A58;
+    margin-left: 10px;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+html[lang="en"] .MuiAccordionDetails-root.css-15v22id-MuiAccordionDetails-root{
+    text-align: left;
+}
+.authorizedPersons-button p{
+    font-family: "Bahij TheSansArabic";
+    font-size: 16px;
+    font-weight: 500;
+    color: #5D5D5D;
+}
+html[lang="ar"] .individuals-login-field input[type="date"]{
+    direction: rtl;
+    text-align: right;
+}
+.selectMultipleCategories{
+    display: block !important;
+    width: 100%;
+}
+.individuals-login-title p{
+    font-family: "Bahij TheSansArabic";
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: #222222;
+    margin: 20px 0;
+}
+html[lang="ar"] option {
+    text-align: right;
+    direction: ltr;
+}
+html[lang="en"] option {
+    text-align: left;
+    direction: rtl;
+}
+.individuals-login-field .MuiPaper-root{
+    box-shadow: none !important;
+}
+.individuals-single-check-box{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+#individuals-login-field{
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: right;
+    background: #F2F4F7 !important;
+    margin-top: 30px;
+}
+html[lang="en"] #individuals-login-field{
+    flex-direction: row;
+}
+html[lang="en"] #individuals-login-field div{
+    justify-content: left;
+}
+.css-eqpfi5-MuiAccordionSummary-content{
+    justify-content: right;
+}
+.rebeted-form{
+    display: flex;
+    justify-content: space-between;
+}
+.rebeted-form input{
+    width: 100%;
+}
+.rebeted-form button{
+    background: none;
+    border: none;
+    font-size: 40px;
+    color: #3F1A58;
+}
+.individuals-login-buttons{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.individuals-login-buttons button{
+    padding: 10px 93px;
+    border-radius: 27px;
+    border: 1px solid #3F1A58;
+    font-family: "Bahij TheSansArabic";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 27.2px;
+    text-align: center;
+
+}
+.individuals-login-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 0;
+}
+.individuals-login-title{
+    width: 90%;
+    max-width: 1150px;
+}
+.individuals-sec-field-title h3{
+    font-family: "Bahij TheSansArabic";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 27.2px;
+    text-align: center;
+    color: #3F1A58;
+    border-radius: 8px;
+}
+.individuals-login-field{
+    width: 90%;
+    max-width: 1150px;
+    text-align: right;
+}
+
+.individuals-sec-field {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 20px;
+}
+
+html[lang="en"] .individuals-sec-field {
+    flex-direction: row;
+}
+
+.individuals-sec-field > * {
+    flex: 1 1 300px;
+}
+.individuals-sec-field-title {
+    margin-top: 30px;
+}
+
+.individuals-single-field{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+}
+.individuals-single-field > *{
+    direction: rtl;
+}
+html[lang="en"] .individuals-single-field > *{
+    direction: ltr;
+}
+.checkbox{
+    flex-direction: row-reverse;
+}
+html[lang="en"] .checkbox{
+    flex-direction: row;
+}
+.checkbox input{
+    width: 20px;
+}
+th{
+    width: 25%;
+}
+.MuiTableCell-head{
+    color: #222 !important;
+    font-weight: 700 !important;
+    font-family: 'Bahij TheSansArabic' !important;
+    font-size: 18px !important;
+    text-align: center !important;
+}
+.MuiTableCell-body{
+    color: #5d5d5d !important;
+    font-weight: 500 !important;
+
+    font-family: 'Bahij TheSansArabic' !important;
+    font-size: 18px !important;
+    text-align: center !important;
+}
+.individuals-single-field input,.individuals-single-field select,.individuals-single-field textarea ,.MuiTableCell-body input,.calculateTotalPoints{
+    height: 46px;
+    border: 1px solid #AEAEAE;
+    border-radius: 10px;
+    color: #5D5D5D;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Bahij TheSansArabic';
+  
+}
+.MuiTableCell-body input:focus-visible{
+    outline: none !important;
+}
+.calculateTotalPoints {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+.individuals-single-field textarea{
+    height: 160px;
+}
+.individuals-sec-field-title-p{
+    font-family: "Bahij TheSansArabic";
+font-size: 16px;
+font-weight: 500;
+line-height: 25.17px;
+text-align: center;
+color: #5D5D5D;
+
+}
+#individuals-login-field div{
+    justify-content: right;
+}
+.individuals-single-field label{
+    font-family:"Bahij TheSansArabic";
+    font-size: 16px;
+    font-weight: 500;
+    color: #5D5D5D;
+
+}
+html[lang="en"] .individuals-single-field label{
+    text-align: left;
+}
+
+.individuals-single-field select{
+    padding: 10px;
+}
+.individuals-single-field input ,.individuals-sec-field table tbody td input{
+    padding: 10px;
+    height: 22px;
+    
+}
+.individuals-buttom-form{
+    margin-top: 45px;
+    background: #46235E;
+    padding: 10px 80px;
+    border-radius: 99px;
+    border: none;
+    font-family: "Bahij TheSansArabic";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 27.2px;
+    color: #FFFFFF;
+
+}
+.individuals-sec-field-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    direction: rtl;
+}
+.individuals-sec-field-grid-box{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    border: 1px solid #F2F4F7;
+}
+.individuals-sec-field-grid-box-title{
+    border: 1px solid #F2F4F7;
+    padding: 40px 10px;
+
+}
+.individuals-sec-field-grid-box input{
+    height:40px ;
+    border: 1px solid #E6E3DD;
+    border-radius: 10px;
+}
+.individuals-sec-field-grid-box-h4 {
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #F2F4F7;
+}
+.individuals-sec-field-grid-box-h4 h4,.individuals-sec-field-grid-box-title h4{
+    font-family: "Bahij TheSansArabic";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25.17px;
+    text-align: right;
+    color: #000000;
+}
+.individuals-single-check-box label a{
+    text-decoration: none;
+}
+#agreement{
+    width: 50%;
+}
+.table{
+    overflow: auto;
+}
+.recommendation{
+    color: #4caa4c  !important;
+}
+
+  .individuals-login-field input:not([type="checkbox"]):not([type="radio"]),
+select {
+  -webkit-appearance: none;
+  background-color: #fff;
+}
+   .table table {
+    display: flex;
+    flex-direction: column;
+}
+
+ .table table thead, 
+ .table table tbody {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+ .table table thead tr, 
+ .table table tbody tr {
+    display: flex;
+    flex-direction: row-reverse; /* Reverse the rows */
+    justify-content: center;
+    align-items: center;
+}
+html[lang="en"].table table thead tr, 
+html[lang="en"] .table table tbody tr {
+   display: flex;
+   flex-direction: row; /* Reverse the rows */
+   justify-content: center;
+   align-items: center;
+}
+ .table table th, 
+ .table table td {
+    flex: 1; /* Ensure all cells have equal width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Optional: Style table headers */
+ .table table th, .table table td {
+    font-weight: bold;
+    height: 135px;
+    max-height: 135px;
+    min-height: 135px;
+    
+}
+.table table td{
+    flex-direction: column;
+    gap: 5px;
+}
+html[lang="ar"] .table table td{
+    direction: rtl;
+}
+.authorizedPersons-button img{
+    width: 25px;
+}
+.individuals-sec-field-generalInformation{
+    display: flex;
+}
+.individuals-sec-field-generalInformation .individuals-sec-field{
+    width: 100%;
+}
+@media screen and (max-width:  1024px) {
+    
+    .individuals-login-title h1{
+        font-size: 24px;
+    }
+    .individuals-login-title p{
+        margin: 0px;
+        margin-bottom: 10px;
+    }
+    .individuals-login-buttons{
+        flex-direction: column;
+        align-items: center;
+    }
+    .individuals-sec-field-grid{
+        overflow-x: auto;
+    }
+    #agreement{
+        width: 100% !important;
+    }
+    .individuals-sec-field-grid-box-title,.individuals-sec-field-grid-box,.individuals-sec-field-grid-box-h4{
+        width: 249px;
+    }
+   .individuals-single-field select{
+        width: 100%;
+    }
+    .individuals-single-field.checkbox{
+        flex-direction: row-reverse;
+    }
+    html[lang="ar"] .individuals-single-field.checkbox{
+        flex-direction: row;
+    }
+    html[lang="en"] .individuals-single-field.checkbox{
+        flex-direction: row;
+    }
+    .individuals-buttom-form{
+        width: 100%;
+    }
+    .rebeted-form button {
+        font-size: 24px;
+        margin-right: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .MuiTableCell-body, .MuiTableCell-head{
+        font-size: 14px;
+      }
+      .table table td, .table table th{
+        overflow: hidden;
+      }
+      html[lang="ar"] .MuiPaper-elevation {
+        direction: rtl;
+      }
+      html[lang="ar"] .MuiPaper-elevation table{
+        direction: ltr;
+      }
+}

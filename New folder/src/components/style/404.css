@@ -1,0 +1,39 @@
+.NotFoundPage-section{
+    height: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.NotFoundPage-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.NotFoundPage-container h1{
+    font-family: "Bahij TheSansArabic";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32.71px;
+    text-align: right;
+
+}
+.NotFoundPage-container button{
+    width: 100%;
+    background: rgba(70, 35, 94, 1);
+    padding: 10px 90px;
+    border: none;
+    border-radius: 8px;
+    font-family: "Bahij TheSansArabic";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 27.2px;
+    text-align: right;
+    color: white;
+    margin-top: 35px;
+
+}
+@media screen and (max-width:  1024px){
+    .NotFoundPage-section{
+        height: 100vw;
+    }
+}

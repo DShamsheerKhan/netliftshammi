@@ -248,13 +248,13 @@ const CompaniesLogin = () => {
 
     try {
       const response = await axios.post(
-        "https://strong-nest-c09ad17fab.strapiapp.com/api/general-informations",
+        "https://reports.itqancapital.com/api/general-informations",
         { data: formattedData },
         {
           headers: {
             "Content-Type": "application/json",
             Authorization:
-              "Bearer 0f4719065f4e32664cb04309b82a4deaa30b50a0264f656cad02f6b14b32a0ebe1f2b9605877ea25251f33c38f65b1b670a6191ded56603d831cdebb5c953db6a38b2f3beb03af16455955777e26b8a7d1bc84da0b7f76266a921b28b97510409a46a88d2b68ee04e3266b206cc877d951249dde9b7967e6e2e278c67b6ccc38" // Use your actual token here
+              "Bearer 0f4719065f4e32664cb04309b82a4deaa30b50a0264f656cad02f6b14b32a0ebe1f2b9605877ea25251f33c38f65b1b670a6191ded56603d831cdebb5c953db6a38b2f3beb03af16455955777e26b8a7d1bc84da0b7f76266a921b28b97510409a46a88d2b68ee04e3266b206cc877d951249dde9b7967e6e2e278c67b6ccc38", // Use your actual token here
           },
         }
       )
@@ -279,13 +279,13 @@ const CompaniesLogin = () => {
 
     try {
       const response = await axios.post(
-        "https://strong-nest-c09ad17fab.strapiapp.com/api/authorized-people",
+        "https://reports.itqancapital.com/api/authorized-people",
         { data: formattedData },
         {
           headers: {
             "Content-Type": "application/json",
             Authorization:
-              "Bearer 0f4719065f4e32664cb04309b82a4deaa30b50a0264f656cad02f6b14b32a0ebe1f2b9605877ea25251f33c38f65b1b670a6191ded56603d831cdebb5c953db6a38b2f3beb03af16455955777e26b8a7d1bc84da0b7f76266a921b28b97510409a46a88d2b68ee04e3266b206cc877d951249dde9b7967e6e2e278c67b6ccc38" // Use your actual token here
+              "Bearer 0f4719065f4e32664cb04309b82a4deaa30b50a0264f656cad02f6b14b32a0ebe1f2b9605877ea25251f33c38f65b1b670a6191ded56603d831cdebb5c953db6a38b2f3beb03af16455955777e26b8a7d1bc84da0b7f76266a921b28b97510409a46a88d2b68ee04e3266b206cc877d951249dde9b7967e6e2e278c67b6ccc38", // Use your actual token here
           },
         }
       )
@@ -393,15 +393,15 @@ const CompaniesLogin = () => {
       console.log("📋 Final submission data:", JSON.stringify(convertedObject))
 
       // Perform the API submission for companies_login
-      console.log("🚀 Starting final API request to:", "https://strong-nest-c09ad17fab.strapiapp.com/api/companies-logins?populate=*")
+      console.log("🚀 Starting final API request to:", "https://reports.itqancapital.com/api/companies-logins?populate=*")
       const response = await axios.post(
-        "https://strong-nest-c09ad17fab.strapiapp.com/api/companies-logins?populate=*",
+        "https://reports.itqancapital.com/api/companies-logins?populate=*",
         formData,
         {
           headers: {
             "Content-Type": "multipart/form-data", // Use multipart/form-data for file uploads
             Authorization:
-              "Bearer 0f4719065f4e32664cb04309b82a4deaa30b50a0264f656cad02f6b14b32a0ebe1f2b9605877ea25251f33c38f65b1b670a6191ded56603d831cdebb5c953db6a38b2f3beb03af16455955777e26b8a7d1bc84da0b7f76266a921b28b97510409a46a88d2b68ee04e3266b206cc877d951249dde9b7967e6e2e278c67b6ccc38" // Replace with your actual token
+              "Bearer 0f4719065f4e32664cb04309b82a4deaa30b50a0264f656cad02f6b14b32a0ebe1f2b9605877ea25251f33c38f65b1b670a6191ded56603d831cdebb5c953db6a38b2f3beb03af16455955777e26b8a7d1bc84da0b7f76266a921b28b97510409a46a88d2b68ee04e3266b206cc877d951249dde9b7967e6e2e278c67b6ccc38", // Replace with your actual token
           },
         }
       )

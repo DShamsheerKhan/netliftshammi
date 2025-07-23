@@ -1,0 +1,156 @@
+.itqan-c-section{
+    margin-top: 120px;
+    z-index: 9;
+}
+.itqan-c-container{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 65px;
+    background: #FFFFFF;
+    padding: 56px 72px 72px 72px;
+    box-shadow: 0px 4px 28.399999618530273px 0px #00000014;
+    border-radius: 20px;
+}
+.itqan-c-content {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    align-items: flex-end;
+    
+}
+.itqan-c-content p{
+    color: #46235E;
+    font-size: 16px;
+    font-family: 'Bahij TheSansArabic';
+}
+
+.itqan-c-content h2{
+    font-size: 42px;
+    
+    font-family: 'Bahij TheSansArabic';
+    font-weight: 700;
+}
+.itqan-c-container p{
+    text-align: right;
+    margin-bottom: 0;
+}
+
+.itqan-c-text {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.itqan-c-text h6 {
+    display: flex;
+    color: #222222;
+    font-size: 24px;
+    font-family: 'Bahij TheSansArabic';
+    font-weight: 500;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+.itqan-c-text p{
+    font-family: 'Bahij TheSansArabic';
+    color: #222222;
+    font-size: 16px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    flex-direction: row-reverse;
+    text-align: right;
+}
+.itqan-c-text > h6 + div > p {
+    margin-bottom: 10px;
+}
+html[lang="en"] .itqan-c-text ul {
+    padding-left: 15px;
+}
+html[lang="ar"] .itqan-c-text ul {
+    padding-left: 0;
+    padding-right: 15px;
+}
+html[lang="en"] .itqan-c-text p{
+    text-align: left;
+}
+.itqan-c-line{
+    border-top: 3px solid #3F1A58;
+    width: 220px;
+    margin-top: 13px;
+    margin-bottom: 22px;
+}
+.itqan-c-image{
+    width: 50%;
+}
+html[lang="en"] .itqan-c-content {
+    direction: ltr; /* Left-to-right direction */
+    align-items: flex-start; /* Align items at the start */
+}
+html[lang="en"] .itqan-c-text{
+    align-items: flex-start;
+}
+html[lang="en"] .itqan-c-text h6{
+    flex-direction: row;
+}
+.itqan-c-text li{
+    position: relative;
+    list-style-type: none;
+    direction: rtl;
+}
+
+html[lang="en"] .itqan-c-text li p{
+    margin-left: 10px;
+}
+html[lang="ar"] .itqan-c-text li p{
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+html[lang="en"]  .itqan-c-text li{
+    direction: ltr;
+
+}
+.itqan-c-text li::before {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    content: url('/carbon_condition-wait-point.png'); /* Replace with the path to your marker image */
+    /* Additional styling properties if needed */
+}
+html[lang="en"] .itqan-c-text li::before {
+    left: -15px;
+}
+html[lang="ar"] .itqan-c-text li::before {
+    right: -15px;
+}
+.itqan-c-text li p{
+    margin: 0;
+}
+@media screen and (max-width:  1024px) {
+    .itqan-c-section{
+        margin-top: 50px;
+    }
+    .itqan-c-container{
+        flex-direction: column;
+        padding: 20px;
+
+    }
+    .itqan-c-image{
+        width: 100%;
+    }
+    .itqan-c-image img{
+        width: 100%;
+    }
+    .itqan-c-text ul{
+        padding-left: 0;
+        padding-right: 20px;
+    }
+    html[lang="en"] .itqan-c-text ul{
+        padding-left: 20px;
+        padding-right: 0px;
+    }
+}

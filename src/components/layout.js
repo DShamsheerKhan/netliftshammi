@@ -34,11 +34,11 @@ const Layout = ({ children, overPadding }) => {
       try {
         // Fetch newsletter data
         const newsletterResponse = await fetch(
-          `https://strong-nest-c09ad17fab.strapiapp.com/api/sections?filters[custom_slug][$eq]=Newsletter&locale=${locale}&populate[section_content][populate][title]=*&populate[section_content][populate][subtitle]=*`,
+          `https://reports.itqancapital.com/api/sections?filters[custom_slug][$eq]=Newsletter&locale=${locale}&populate[section_content][populate][title]=*&populate[section_content][populate][subtitle]=*`,
           {
             headers: {
               Authorization:
-                "Bearer 0f4719065f4e32664cb04309b82a4deaa30b50a0264f656cad02f6b14b32a0ebe1f2b9605877ea25251f33c38f65b1b670a6191ded56603d831cdebb5c953db6a38b2f3beb03af16455955777e26b8a7d1bc84da0b7f76266a921b28b97510409a46a88d2b68ee04e3266b206cc877d951249dde9b7967e6e2e278c67b6ccc38"
+                "Bearer 0f4719065f4e32664cb04309b82a4deaa30b50a0264f656cad02f6b14b32a0ebe1f2b9605877ea25251f33c38f65b1b670a6191ded56603d831cdebb5c953db6a38b2f3beb03af16455955777e26b8a7d1bc84da0b7f76266a921b28b97510409a46a88d2b68ee04e3266b206cc877d951249dde9b7967e6e2e278c67b6ccc38",
             },
           }
         )
@@ -46,11 +46,11 @@ const Layout = ({ children, overPadding }) => {
 
         // Fetch address data
         const addressResponse = await fetch(
-          `https://strong-nest-c09ad17fab.strapiapp.com/api/sections?filters[custom_slug][$eq]=address_footer&locale=${locale}&populate[section_content][populate][title]=*&populate[section_content][populate][subtitle]=*`,
+          `https://reports.itqancapital.com/api/sections?filters[custom_slug][$eq]=address_footer&locale=${locale}&populate[section_content][populate][title]=*&populate[section_content][populate][subtitle]=*`,
           {
             headers: {
               Authorization:
-                "Bearer 0f4719065f4e32664cb04309b82a4deaa30b50a0264f656cad02f6b14b32a0ebe1f2b9605877ea25251f33c38f65b1b670a6191ded56603d831cdebb5c953db6a38b2f3beb03af16455955777e26b8a7d1bc84da0b7f76266a921b28b97510409a46a88d2b68ee04e3266b206cc877d951249dde9b7967e6e2e278c67b6ccc38"
+                "Bearer 0f4719065f4e32664cb04309b82a4deaa30b50a0264f656cad02f6b14b32a0ebe1f2b9605877ea25251f33c38f65b1b670a6191ded56603d831cdebb5c953db6a38b2f3beb03af16455955777e26b8a7d1bc84da0b7f76266a921b28b97510409a46a88d2b68ee04e3266b206cc877d951249dde9b7967e6e2e278c67b6ccc38",
             },
           }
         )
@@ -83,13 +83,13 @@ const Layout = ({ children, overPadding }) => {
     }
 
     const response = await fetch(
-      "https://strong-nest-c09ad17fab.strapiapp.com/api/newsletter-emails",
+      "https://reports.itqancapital.com/api/newsletter-emails",
       {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
           Authorization:
-            "Bearer 0f4719065f4e32664cb04309b82a4deaa30b50a0264f656cad02f6b14b32a0ebe1f2b9605877ea25251f33c38f65b1b670a6191ded56603d831cdebb5c953db6a38b2f3beb03af16455955777e26b8a7d1bc84da0b7f76266a921b28b97510409a46a88d2b68ee04e3266b206cc877d951249dde9b7967e6e2e278c67b6ccc38"
+            "Bearer 0f4719065f4e32664cb04309b82a4deaa30b50a0264f656cad02f6b14b32a0ebe1f2b9605877ea25251f33c38f65b1b670a6191ded56603d831cdebb5c953db6a38b2f3beb03af16455955777e26b8a7d1bc84da0b7f76266a921b28b97510409a46a88d2b68ee04e3266b206cc877d951249dde9b7967e6e2e278c67b6ccc38",
         },
         body: JSON.stringify({ data: { email } }),
       }

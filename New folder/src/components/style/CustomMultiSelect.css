@@ -1,0 +1,80 @@
+.custom-multi-select {
+    position: relative;
+    width: 100%;
+  }
+  
+  .custom-multi-select-field {
+    min-height: 46px;
+    border: 1px solid #AEAEAE;
+    border-radius: 10px;
+    padding: 8px;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    color: #5D5D5D;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Bahij TheSansArabic';
+    box-sizing: border-box;
+  }
+  
+  .custom-multi-select-field.error {
+    border-color: red;
+  }
+  
+  .custom-multi-select-placeholder {
+    color: #5D5D5D;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Bahij TheSansArabic'
+  }
+  
+  .custom-multi-select-tag {
+    background-color: #F5F5F5;
+    padding: 4px 8px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  
+  .custom-multi-select-remove {
+    background: none;
+    border: none;
+    padding: 2px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .custom-multi-select-remove:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  
+  .custom-multi-select-dropdown {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    margin-top: 4px;
+    background-color: white;
+    border: 1px solid #AEAEAE;
+    border-radius: 10px;
+    max-height: 240px;
+    overflow-y: auto;
+  }
+  
+  .custom-multi-select-option {
+    padding: 8px 16px;
+    cursor: pointer;
+    color: #5D5D5D;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Bahij TheSansArabic';
+  }
+  
+  .custom-multi-select-option:hover {
+    background-color: #F5F5F5;
+  }

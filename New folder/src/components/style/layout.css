@@ -1,0 +1,626 @@
+@font-face {
+  font-family: 'Bahij TheSansArabic';
+  src: url(../../../Font/alfont_com_ArbFONTS-Bahij_TheSansArabic-Plain.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Bahij TheSansArabic light';
+  src: url(../../../Font/TheSansArabic-Light.ttf) format('truetype');
+}
+body {
+  margin: 0 !important;
+}
+.navBar-sec {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 7.199999809265137px 0px #5E5E5E0A;
+  transition: top 0.3s ease-in-out;
+
+  z-index: 11;
+}
+html[lang="en"] .navBar-container,html[lang="en"] .navBar-links{
+  flex-direction: row;
+}
+.show-header {
+  top: 0; /* Show header */
+}
+
+.hide-header {
+  top: -100%; /* Hide header - adjust based on the actual height of your header */
+}
+.navBar-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 90%;
+  align-items: center;
+  gap: 20px;
+}
+.navBar-logo{
+  padding: 15px 0;
+}
+.navBar-openAcc {
+  display: flex;
+  gap: 10px;
+}
+html[lang="en"] .navBar-openAcc{
+  flex-direction: row-reverse;
+}
+.navBar-links {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  width: 100%;
+  gap: 20px;
+}
+.navBar-links a{
+  text-decoration: none;
+  color: #5D5D5D;
+  font-weight: 500;
+  font-family:"Bahij TheSansArabic" ;
+  font-size: 16px;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 3px;
+  justify-content: space-between;
+align-items: center;
+text-transform: uppercase;
+text-wrap-mode: nowrap;
+}
+html[lang="en"] .navBar-links a{
+  flex-direction: row;
+}
+.navBar-links a img{
+  height: 100%;
+}
+.navBar-links a:focus{
+  color: #3F1A58;
+  border-bottom: 1px solid #3F1A58;
+  margin-bottom: 8px;
+  
+}
+.navBar-sec {
+  transition: top 0.3s;
+}
+
+.hide-header {
+  top: -100px; 
+}
+.navBar-openAcc button,.logo-sec-mob button{
+  color: #3F1A58;
+  font-family: 'Bahij TheSansArabic';
+  font-size: 16px;
+  border: none;
+  background: rgba(174, 174, 174, 0.2);
+  transition:0.25s all ease;
+
+  width: 189px;
+  height: 48px;
+  border-radius: 24px;
+}
+.logo-sec-mob{
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 20px;
+}
+.navBar-openAcc button:hover{
+  background: #3F1A58 !important;
+  color: white;
+}
+.footer-sec{
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  
+  border-width: 95%;
+}
+.footer-container{
+  padding-top: 80px;
+  border-top:  1px solid #0000000D;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 90%;
+  padding-bottom: 60px;
+}
+html[lang="en"]  .footer-container{
+  flex-direction: row;
+}
+html[lang="en"] .footer-logo{
+  text-align: left;
+}
+html[lang="en"] .footer-links a,html[lang="en"] .footer-services a,html[lang="en"] .footer-logo p,html[lang="en"] .footer-container form p,html[lang="en"] input.button-input-field{
+  text-align: left;
+}
+html[lang="en"] .footer-links h6, html[lang="en"] .footer-services h6, html[lang="en"] .footer-container form h6{
+  text-align: left;
+}
+html[lang="en"] .button-input{
+  flex-direction: row;
+  padding: 3px 5px 3px 20px;
+}
+
+.footer-links,.footer-services,.footer-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer-links h6,.footer-services h6,.footer-container form h6{
+  color: #222222;
+  font-family: "Bahij TheSansArabic";
+  font-weight: 500;
+  font-size: 16px;
+  text-align: right;
+  margin-bottom: 10px;
+}
+.footer-links a,.footer-services a,.footer-logo p,.footer-container form p{
+  font-family: "Bahij TheSansArabic";
+  font-weight: 500;
+  font-size: 14px;
+  color: #5D5D5D;
+  text-decoration: none;
+  text-align: right;
+}
+.footer-logo {
+  text-align: right;
+  width: 25%;
+}
+.footer-logo img{
+  margin-bottom: 15px;
+}
+.button-input{
+  display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 3px 20px 3px 5px;
+    border: 1px solid #BFBFBF;
+    border-radius: 27px;
+}
+input.button-input-field:focus-visible {
+  outline-offset: none !important;
+  
+  outline:none !important;
+}
+input.button-input-field {
+  border: none;
+  text-align: right;
+  color: #0000004D;
+  font-weight: 500;
+  font-family: "Bahij TheSansArabic";
+  font-size: 14px;
+  
+}
+button.button-input-button{
+  width: 78px;
+  height: 48px;
+  border: none;
+  background: #3F1A58;
+  border-radius: 25px;
+  font-family: "Bahij TheSansArabic";
+  font-weight: 500;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.2);
+  /* padding: 12px 16px; */
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s ease,  0.5s ease; 
+  transform: translateY(-20px); 
+}
+.sub-dropdown{
+  position: relative;
+}
+.mega-menu-asset-management{
+  position: absolute;
+  background: white;
+  width: 775px;
+  box-sizing: border-box;
+  top: 0;
+  right:-775px ;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  transition: opacity 0.5s ease,  0.5s ease; 
+
+
+}
+html[lang="ar"] .mega-menu-asset-management{
+  right:auto;
+  left: -775px;
+  flex-direction: row-reverse;
+}
+.sub-dropdown a:first-child{
+  display: flex;
+  align-items: center;
+  
+}
+html[lang="ar"] .sub-dropdown a:first-child img{
+  transform: rotate(90deg);
+}
+.sub-dropdown a:first-child img{
+  transform: rotate(270deg);
+}
+.mega-menu-asset-management h4{
+  font-family: "Bahij TheSansArabic";
+  font-weight: 600;
+  
+  color: black;
+  padding: 15px 20px;
+  text-decoration: none;
+  display: block;
+  box-shadow: none;
+  border-bottom: 1px solid #00000036;
+  border-radius: 6px;
+}
+html[lang="en"]  .dropdown:hover .dropdown-content{
+  transform: translateY(0px) translateX(-0px); 
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+  opacity: 1;
+  transform: translateY(0px) translateX(-100px); 
+
+}
+html[lang="ar"] .dropdown:hover .dropdown-content{
+  left: 50%;
+}
+html[lang="en"] .dropdown-content a{
+  text-align: left  ;
+}
+.dropdown-content a {
+  font-family: "Bahij TheSansArabic";
+  font-weight: 500;
+  text-align: right;
+  color: black;
+  padding: 15px 20px;
+  text-decoration: none;
+  display: block;
+  box-shadow: none;
+}
+.dropdown-content a:hover{
+  color: #3F1A58;
+  font-weight: 700;
+  background: #F2F4F7;
+
+}
+.mobile-menu{
+  display: none;
+}
+.dropdown-content a:focus{
+  border: none !important;
+  padding: none !important;
+  margin: none !important;
+}
+.navBar-hamburger{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-end;
+  margin-right: 30px;
+}
+html[lang="en"] .navBar-hamburger{
+  align-items: flex-start;
+  margin-right: 0px;
+  margin-left: 30px;
+}
+.logo-sec-mob {
+  text-align: right;
+  margin-right: 20px;
+
+  margin-bottom: 30px;
+}
+.navBar-hamburger a,.mobile-dropdown-header{
+  text-decoration: none;
+  color: #5d5d5d;
+  font-family: "Bahij TheSansArabic";
+  font-weight: 500;
+  font-size: 14px;
+}
+button.btn.btn-danger{
+  background: none;
+  border: none;
+}
+.login-mob{
+  text-align: right;
+  margin-right: 20px;
+  margin-top: 30px;
+}
+html[lang="en"] .login-mob,html[lang="en"] .logo-sec-mob{
+  text-align: left;
+  margin-right: 0px;
+  margin-left: 20px;
+  justify-content: flex-end;
+}
+.login-mob button{
+  color: #3F1A58;
+  font-family: 'Bahij TheSansArabic';
+  font-size: 16px;
+  border: none;
+  background: rgba(174, 174, 174, 0.2);
+  width: 189px;
+  height: 48px;
+  border-radius: 24px;
+}
+button.btn-close{
+  width: 27px !important;
+  height: 27px !important;
+  background: none;
+  border: none;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+button.btn-close::before{
+  display: block;
+  width: 20px;
+  height: 20px;
+  content: " ";
+  background: url("../../../static/false\ 1.svg") !important;
+  background-size: cover !important;
+ 
+}
+.copyright-sec{
+  background: #FFFFFF;
+}
+.copyright{
+  text-align: center;
+  border-top: 1px solid #0000000D;
+  padding: 28px 0;
+  
+}
+.success-message{
+  color: #4caa4c !important;
+}
+.error-message{
+  color: red;
+}
+.copyright p{
+  font-family: "Bahij TheSansArabic";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22.03px;
+  color: #5D5D5D;
+
+}
+.copyright p a{
+  color: #222222;
+  font-weight: 700;
+}
+.modal-content {
+  overflow-y: auto;
+}
+.dropdown .dropdown-toggle,.lang-btn {
+  width: 100% !important;
+  display: flex;
+  align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 3px;
+    max-width: 62px;
+    background: #EFEFEF !important;
+
+}
+
+.dropdown  ul{
+  list-style-type: none;
+  padding-left: 1px;
+}
+.dropdown  ul li:nth-child(2){
+  margin-top: 5px;
+}
+.lang-btn::before{
+  content:" ";
+  width: 20px;
+  height: 20px;
+  background: url("/Vector (111).svg");
+  transition: 0.25s all ease;
+}
+.lang-btn:hover::before{
+  content:" ";
+  width: 20px;
+  height: 20px;
+  background: url("/Vector (111) 1.png");
+}
+/* Header styling remains similar */
+.mobile-dropdown-header {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Toggle icon container for positioning both icons on top of each other */
+.toggle-icon {
+  position: relative;
+  width: 20px;   /* adjust as needed */
+  height: 20px;  /* adjust as needed */
+  display: flex
+  ;
+      justify-content: center;
+      align-items: center;
+}
+
+/* Both icons are absolutely positioned to overlap */
+.toggle-icon .icon {
+
+  
+  font-size: 20px;
+  transition: opacity 0.3s ease;
+}
+
+/* Control opacity to fade in/out */
+.fade-in {
+  opacity: 1;
+}
+.fade-out {
+  opacity: 0;
+}
+
+/* Animate the main dropdown content */
+.mobile-dropdown-content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  gap: 10px;
+  margin-top: 10px;
+}
+html[lang="ar"] .mobile-dropdown-content ,html[lang="ar"]  .mobile-sub-dropdown-section{
+  align-items: flex-end;
+  padding-left: 0px;
+  padding-right: 20px;
+}
+/* When open, allow enough max-height and set opacity to fully visible */
+.mobile-dropdown-content.open {
+  max-height: 1000px; /* Use a value larger than the expected content height */
+  opacity: 1;
+}
+
+/* Animate the sub-dropdown content in the same way */
+.mobile-sub-dropdown-content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  gap: 10px;
+  margin-top: 10px;
+}
+html[lang="ar"] .mobile-dropdown-header{
+    flex-direction: row-reverse;
+}
+.mobile-sub-dropdown-content.open {
+  max-height: 1000px;
+  opacity: 1;
+}
+
+/* Existing styling for sub-dropdown sections */
+.mobile-sub-dropdown-section {
+  transition: all 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+.mobile-sub-dropdown-section h4 {
+  color: black;
+  font-family: "Bahij TheSansArabic";
+  font-weight: 500;
+  font-size: 18px;
+}
+
+/* You can keep the header span styling */
+.mobile-dropdown-header > span:last-child {
+  color: black;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+.mobile-dropdown:has(.open) > .mobile-dropdown-header{
+  background: #efefef;
+  padding: 10px;
+  border-radius: 4px;
+
+}
+.mobile-dropdown:has(.open) {
+  border-bottom: 1px solid #efefef;
+  padding-bottom: 20px;
+}
+@media screen and (max-width: 1700px){
+  .navBar-links{
+    gap: 20px;
+    flex-wrap: wrap;
+    padding:  20px 0;
+  }
+}
+@media screen and (max-width: 1024px){
+  .modal-content {
+    position: fixed;
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    height: 100%; 
+    line-height: 1.4;
+    background: #ffffff;
+    padding: 0;
+    border-radius: 3px;
+    transform: translate(0, 0); 
+}
+html[lang="en"]  .footer-container,.footer-container{
+    flex-direction: column;
+  }
+  button.ripple.ripple-surface.btn.btn-primary.dropdown-toggle,.lang-btn {
+    color: #3F1A58;
+    font-family: 'Bahij TheSansArabic';
+    font-size: 16px;
+    border: none;
+    background: rgba(174, 174, 174, 0.2);
+    transition: 0.25s all ease;
+    width: 189px;
+    height: 48px;
+    border-radius: 24px;
+    
+      width: 100% !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      gap: 3px;
+      max-width: 62px;
+      background: #EFEFEF !important;
+  
+  }
+  /* .lang-btn{
+    margin-top: -15px !important;
+  } */
+
+  .navBar-links,.navBar-openAcc{
+    display: none;
+  }
+  .footer-logo{
+    width: 100%;
+  }
+  .footer-services h6,.footer-links h6,form h6{
+    margin-top: 21px ;
+    margin-bottom: 10px;
+    font-weight: 700 !important;
+  }
+  .logo-sec-mob {
+    margin-top: 50px;
+}
+}
+@media screen and (max-width: 767px){
+  .logo-sec-mob {
+    margin-top: 50px;
+}
+.login-mob{
+  margin-bottom: 100px;
+}
+.navBar-hamburger a,.mobile-dropdown-header{
+  font-size: 16px;
+}
+}

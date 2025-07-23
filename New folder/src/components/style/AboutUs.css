@@ -1,0 +1,127 @@
+.aboutus-hero-sec{
+    display: flex;
+    justify-content: center;
+    background: rgba(242, 244, 247, 1);
+    height: 470px;
+}
+.aboutus-hero-container{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display:flex ;
+    background: url("/Frame 21212.png");
+    background-position: right top;
+        background-repeat: no-repeat;
+}
+.aboutus-hero-title{
+    text-align: center;
+}
+.aboutus-hero-title h1{
+    font-family: "Bahij TheSansArabic";
+    font-size: 50px;
+    font-weight: 700;
+    color: rgba(63, 26, 88, 1);
+    
+
+}
+.aboutus-hero-title p{
+    font-family: "Bahij TheSansArabic";
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(63, 26, 88, 1);
+
+}
+.who-are-we-sec{
+    display: flex;
+    justify-content: center;
+    padding: 100px 0 140px 0;
+    
+}
+.who-are-we-container{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+}
+.who-are-we-title{
+    width: 70%;
+}
+.who-are-we-title h3{
+    font-family: "Bahij TheSansArabic";
+    font-size: 42px;
+    font-weight: 700;
+color: rgba(34, 34, 34, 1);
+    text-align: center;
+    margin-bottom: 45px;
+
+}
+.who-are-we-title p{
+    font-family: "Bahij TheSansArabic";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 27px;
+    color: rgba(34, 34, 34, 1);
+    text-align: left;
+
+}
+html[lang="ar"] .who-are-we-title p{
+    text-align: right;
+}
+.who-are-we-title p:nth-child(2),.who-are-we-title p:nth-child(3){
+    margin-bottom: 30px;
+}
+.who-are-we-rewards-sec{
+    display: flex;
+    justify-content: center;
+    padding: 100px 0 50px 0;
+
+}
+.who-are-we-rewards-container {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.who-are-we-reward {
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    border: 2px solid rgb(233, 198, 0);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1), -10px -10px 20px rgba(255, 255, 255, 0.9);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.who-are-we-reward img {
+    width: 100%;
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.who-are-we-reward:hover {
+    transform: scale(1.05) ;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2), 0 0 20px rgba(233, 198, 0, 0.6);
+}
+@media screen and (max-width:  1024px){
+    .who-are-we-sec{
+        padding: 30px 0  50px 0;
+    }
+    .who-are-we-title{
+        width: 100%;
+    }
+    .aboutus-hero-title h1{
+        font-size: 36px;
+    }
+    .aboutus-hero-title p{
+        font-size: 20px;
+    }
+    .aboutus-hero-sec{
+        height: 330px;
+    }
+}
